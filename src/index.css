@@ -94,7 +94,7 @@ ul li{
   background-color: var(--accent-color-hover);
 }
 
-btn:disabled {
+.btn:disabled {
   opacity: 0.5;
   pointer-events: none;
 }

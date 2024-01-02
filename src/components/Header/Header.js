@@ -17,7 +17,7 @@ const Header = () => {
             <NavLink to="/watched">Watched</NavLink>
           </li>
           <li>
-            <NavLink to="/add">Add</NavLink>
+            <NavLink to="/add" className='btn'>Add</NavLink>
           </li>
         </ul>
       </div>
