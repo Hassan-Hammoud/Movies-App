@@ -1,13 +1,104 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600;1,700;1,800&display=swap");
+
+/* Start Global Roles */
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
+
+/* Colors Used  */
+
+:root {
+  --primary-color: white;
+  --secondary-color: #032541;
+  --secondary-color-hover: #03254185;
+  --accent-color: #21d07a;
+}
+
+/* Start Container customizations  */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 991px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Container customizations  */
+
+/* Start ul li customizations  */
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* End ul li customizations  */
+
+/* start Button customizations  */
+.btn {
+  padding: 10px 15px;
+  color: var(--primary-color);
+  background-color:var(--secondary-color) ;
+  border-radius: 6px;
+  display:inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3 ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+.btn:hover {
+  background-color: var(--secondary-color-hover);
+}
+
+btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* End Button customizations  */
+
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End Global Roles */
