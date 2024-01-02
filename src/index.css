@@ -20,6 +20,7 @@ body {
   --secondary-color: #032541;
   --secondary-color-hover: #03254185;
   --accent-color: #21d07a;
+  --accent-color-hover: #21d07bdc;
 }
 
 /* Start Container customizations  */
@@ -57,7 +58,14 @@ body {
   box-sizing: border-box;
 }
 
-ul {
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+ul li{
   list-style: none;
   padding: 0;
   margin: 0;
@@ -70,7 +78,7 @@ ul {
 .btn {
   padding: 10px 15px;
   color: var(--primary-color);
-  background-color:var(--secondary-color) ;
+  background-color:var(--accent-color) ;
   border-radius: 6px;
   display:inline-block;
   font-weight: 700;
@@ -83,7 +91,7 @@ ul {
 
 
 .btn:hover {
-  background-color: var(--secondary-color-hover);
+  background-color: var(--accent-color-hover);
 }
 
 btn:disabled {
