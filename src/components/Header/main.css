@@ -1,6 +1,9 @@
 header {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    height: 70px;
+    display: flex;
+    align-items: center;
 }
 
 header .container {
