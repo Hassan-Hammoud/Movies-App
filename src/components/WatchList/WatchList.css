@@ -1,40 +1,45 @@
 .watch-list {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .watch-list .main-heading {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
 .watch-list .main-heading p {
-    background-color: var(--accent-color);
-    padding: 10px 15px;
-    border-radius: 100px;
-    color: var(--primary-color);
-    font-weight: bold;
-    display: block;
-
+  background-color: var(--accent-color);
+  padding: 10px 15px;
+  border-radius: 100px;
+  color: var(--primary-color);
+  font-weight: bold;
+  display: block;
 }
 
 .watch-list h3 {
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #c4c4c4;
-    margin-top: 100px;
-    text-align: center;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c4c4c4;
+  margin-top: 100px;
+  text-align: center;
 }
 
-
+@media (max-width: 768px) {
+  .watch-list .main-heading h2 {
+    font-size: 20px;
+  }
+  .watch-list .main-heading p {
+    font-size: 15px;
+  }
+}
 .watch-list .movie-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
 
 /* @media (max-width:768px) {

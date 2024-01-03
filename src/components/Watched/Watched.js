@@ -1,6 +1,8 @@
 import React from "react";
 import { useMovieContext } from "../context/GlobalContext";
 import MovieCard from "../MovieCard/MovieCard";
+import "../WatchList/WatchList.css";
+
 
 const Watched = () => {
   const MovieContext = useMovieContext();
@@ -8,7 +10,7 @@ const Watched = () => {
     <div className="watch-list">
       <div className="container">
         <div className="main-heading">
-          <h2>My Watched </h2>
+          <h2>My Watched</h2>
           <p className="movies-count">
             {MovieContext.watched.length}{" "}
             {MovieContext.watched.length <= 1 ? "Movie" : "Movies"}

@@ -29,6 +29,6 @@
 }
 
 .ctrl-btn:hover {
-    color: var(--accent-color);
+    color: var(--secondary-color-hover);
     
 }
