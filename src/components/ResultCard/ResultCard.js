@@ -1,8 +1,18 @@
 import React from "react";
 import "./ResultCard.css";
-// import { Link } from "react-router-dom";
+import { useMovieContext } from "../context/GlobalContext";
+import * as actions from "../context/action/ActionTypes";
 
 const ResultCard = ({ movie }) => {
+  const MovieContext = useMovieContext();
+  const storeMovie = MovieContext.watchList.find(
+    (o) => o.imdbID === movie.imdbID
+  );
+  const storeMovieWatched = MovieContext.watched.find(
+    (o) => o.imdbID === movie.imdbID
+  );
+  const watchListDisable = storeMovie ? true : storeMovieWatched ? true : false;
+  const watchedDisable = storeMovieWatched ? true : false;
   return (
     <div className="result-card">
       <div className="poster-wrapper">
@@ -18,10 +28,28 @@ const ResultCard = ({ movie }) => {
           {movie.Year ? <p>{movie.Year}</p> : "-"}
         </div>
         <div className="button-card">
-          <button to="" className="btn">
+          <button
+            onClick={() =>
+              MovieContext.MoviesDispatch({
+                type: actions.ADD_MOVIE_TO_WATCH_LIST,
+                payload: movie,
+              })
+            }
+            disabled={watchListDisable}
+            className="btn"
+          >
             Add To watchList
           </button>
-          <button to="" className="btn">
+          <button
+            onClick={() =>
+              MovieContext.MoviesDispatch({
+                type: actions.ADD_MOVIE_TO_WATCHED,
+                payload: movie,
+              })
+            }
+            disabled={watchedDisable}
+            className="btn"
+          >
             Add To watched
           </button>
         </div>
