@@ -21,10 +21,13 @@
 }
 
 .watch-list h3 {
-    font-size: 40px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #c4c4c4;
+    margin-top: 100px;
+    text-align: center;
 }
 
 
