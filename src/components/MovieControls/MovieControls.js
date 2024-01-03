@@ -18,7 +18,7 @@ const MovieControls = ({ movie, type }) => {
             }
             className="ctrl-btn "
           >
-            <i class="fa-regular fa-eye"></i>
+            <i className="fa-regular fa-eye"></i>
           </button>
           <button
             onClick={() =>
@@ -29,7 +29,7 @@ const MovieControls = ({ movie, type }) => {
             }
             className="ctrl-btn "
           >
-            <i class="fa-solid fa-xmark"></i>
+            <i className="fa-solid fa-xmark"></i>
           </button>
         </>
       )}
@@ -45,7 +45,7 @@ const MovieControls = ({ movie, type }) => {
             }
             className="ctrl-btn "
           >
-            <i class="fa-regular fa-eye-slash"></i>
+            <i className="fa-regular fa-eye-slash"></i>
           </button>
           <button
             onClick={() =>
@@ -56,7 +56,7 @@ const MovieControls = ({ movie, type }) => {
             }
             className="ctrl-btn "
           >
-            <i class="fa-solid fa-xmark"></i>
+            <i className="fa-solid fa-xmark"></i>
           </button>
         </>
       )}
