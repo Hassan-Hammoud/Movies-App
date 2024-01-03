@@ -1,6 +1,6 @@
 import React from "react";
 import "./ResultCard.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const ResultCard = ({ movie }) => {
   return (
@@ -18,12 +18,12 @@ const ResultCard = ({ movie }) => {
           {movie.Year ? <p>{movie.Year}</p> : "-"}
         </div>
         <div className="button-card">
-          <Link to="" className="btn">
+          <button to="" className="btn">
             Add To watchList
-          </Link>
-          <Link to="" className="btn">
+          </button>
+          <button to="" className="btn">
             Add To watched
-          </Link>
+          </button>
         </div>
       </div>
     </div>
