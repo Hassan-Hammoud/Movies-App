@@ -63,6 +63,6 @@
   .result-card .button-card .btn {
     font-size: 12px;
     margin-top: 20px;
-    max-width: 50%;
+    /* max-width: 50%; */
   }
 }
